@@ -3,7 +3,7 @@
 .box1{
     border:1px dashed purple;
     border-radius: 4px;
-    background-color: #bfa;
+    background-color: rgb(187, 113, 53);
     width: 100px;
     height: 100px;
     box-shadow: 10px 10px 5px #666;
@@ -24,7 +24,4 @@ div.div2{
     width: 100px;
     height: 100px;
 
-}
-body{
-    background-color: orange;
 }

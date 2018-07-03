@@ -16,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/ENGLISH-LIGHT/SX/issues"
   },
-  "homepage": "https://github.com/ENGLISH-LIGHT/SX#readme"
+  "homepage": "https://github.com/ENGLISH-LIGHT/SX#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-uglifyes": "^0.1.3",
+    "open": "^0.0.5"
+  }
 }

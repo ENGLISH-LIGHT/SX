@@ -1,0 +1,27 @@
+
+
+.box1{
+    border:1px dashed purple;
+    border-radius: 4px;
+    background-color: rgb(187, 113, 53);
+    width: 100px;
+    height: 100px;
+    box-shadow: 10px 10px 5px #666;
+}
+
+div.div1{
+    background-color: #bfa;
+    width: 100px;
+    height: 100px;
+}
+div.div2{
+    background-color: #666;
+    width: 100px;
+    height: 100px;
+}
+.div1 .div3{
+    background: pink;
+    width: 100px;
+    height: 100px;
+
+}
