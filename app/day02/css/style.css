@@ -1,15 +1,20 @@
 @charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
 
-body{
+body {
     background-color: lightblue;
 }
-.div1{
+
+.div1 {
     width: 200px;
     height: 200px;
     /* background-color: red; */
     box-shadow: 5px 30px 10px green;
-    margin:100px auto;
-    border:1px solid yellow;
+    margin: 100px auto;
+    border: 1px solid yellow;
     border-radius: 4px;
     background-image: url("../img/2.jpg");
     background-size: 100% 100%;
@@ -17,8 +22,155 @@ body{
     /* 注意transition位置 */
 }
 
-.div1:hover{
+.div1:hover {
     transform: rotate(360deg) scale(2);
     background-image: url('../img/1.jpg');
     background-size: 100% 100%;
 }
+
+.position {
+    /* position: relative; */
+    top: 30px;
+    left: 100px;
+    /* right:50px; */
+    /* bottom: 100px; */
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+}
+
+.son {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: royalblue;
+}
+
+.wrapper{
+    margin: 20px auto;
+    border:5px solid #fff;
+    width: 1200px;
+}
+.wrapper>div{
+    position: relative;
+    /* background-color: red; */
+    width: 100%;
+    height: 300px;
+    /* border-bottom: 5px solid white; */
+}
+
+.wrapper .one{
+    position: absolute;
+    left:5px;
+    width: 33%;
+    height: 100%;
+    /* border-right:5px solid #fff; */
+    /* border-bottom:2px solid #fff; */
+    overflow: hidden;
+
+}
+.wrapper .two{
+    position: absolute;
+    left: 33%;
+    width: 33%;
+    height: 100%;
+    /* border-right:5px solid #fff; */
+    /* border-bottom:2px solid #fff; */
+    overflow: hidden;
+
+}
+.wrapper .three{
+    position: absolute;
+    left: 66%;
+    width: 33%;
+    height: 100%;
+    /* border-bottom:2px solid #fff; */
+    overflow: hidden;
+}
+img{
+    border: 5px solid white;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.first>.one>img:hover{
+    opacity: 0.5;
+    transform: translateX(50px);
+}
+.first>.two>img:hover{
+    opacity: 0.5;
+    transform: translateX(-50px);
+}
+.first>.three>img:hover{    
+    opacity: 0.5;
+    transform: translateY(-50px);
+}
+
+.second>.three>img:hover{
+    transform: scale(2);
+}
+.third>.one>img:hover{
+    transform: scale(0.5);
+}
+/* .third>.two>img:hover{
+    transform: scale(0.5);
+} */
+.third>.three>img:hover{
+    transform: rotate(3600deg);
+}
+
+.first>.one>h1{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: aquamarine;
+    transition:all 3s;
+}
+.first>.one>h1:hover{
+    transform: translateX(40px);
+}
+
+
+
+/* .first>.one{
+    background: url('../img/1.jpg') no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.5;
+}
+.first>one:hover{
+    
+}
+.first>.two{
+    background: url('../img/2.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.first>.three{
+    background: url('../img/3.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.second>.one{
+    background: url('../img/4.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.second>.two{
+    background: url('../img/5.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.second>.three{
+    background: url('../img/6.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.third>.one{
+    background: url('../img/7.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.third>.two{
+    background: url('../img/8.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.third >.three{
+    background: url('../img/9.jpg') no-repeat;
+    background-size: 100% 100%;
+} */
