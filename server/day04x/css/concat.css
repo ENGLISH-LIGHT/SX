@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #bfa;
+}
+
+#img1{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    position: absolute;
+    width: 18%;
+}
+
+#img2{
+    left:5%;
+    bottom: 40%;
+}
+#img3{
+    left:5%;
+    bottom: 30%;
+}
+#img4{
+    left:5%;
+    bottom: 20%;
+}
+
+#img5{
+    right:5%;
+    bottom: 40%;
+}
+#img6{
+    right:5%;
+    bottom: 30%;
+}
+#img7{
+    right:5%;
+    bottom: 20%;
+}
