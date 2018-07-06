@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #bfa;
+}
+
+.box{
+    margin: 100px auto;
+    background-color: yellow;
+    width:400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content{
+    width: 360px;
+    margin: 50px auto;
+}
+
+.gameDiv{
+    visibility:  hidden;
+    width: 360px;
+    height: 360px;
+}
+
+img{
+    width: 110px;
+    height: 110px;
+    /* border: 5px solid white; */
+}
+
+.title{
+    width: 100%;
+    margin: 0 auto;
+    /* text-align: center; */
+    color: pink;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.score{
+    width: 100%;
+    text-align: center;
+    color: rebeccapurple;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+#btn{
+    width: 80%;
+    height: 40px;
+    color: black;
+}
