@@ -586,3 +586,19 @@ img{
     opacity: 0.8;
 }
 
+.musicno{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    animation: on 1s infinite;
+}
+
+@keyframes on{
+    from{}
+    to{
+        transform: rotate(360deg);
+    }
+}
