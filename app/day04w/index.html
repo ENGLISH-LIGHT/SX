@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04w</title>
+    <link rel="style    sheet" href="./css/concat.min.css">
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <p class="thank">谢谢惠顾</p>
+        <canvas width="300" height="150" id="mycanvas"></canvas>
+    </div>
+    <script>
+        
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, 300, 150);
+        c.onmousemove = function (event) {
+            ctx.clearRect(event.offsetX, event.offsetY, 100, 100);
+        }
+    </script> -->
+
+    		
+		<!-- <canvas id="myCanvas" width="500" height="500"></canvas>
+		
+		
+		<script>
+			
+			var canvas = document.getElementById("myCanvas")
+			var ctx = canvas.getContext("2d")
+			
+//			画直线
+			ctx.beginPath();
+			ctx.moveTo(100,10);
+			ctx.lineTo(100,350);
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.moveTo(50,350);
+			ctx.lineTo(500,350);
+			ctx.stroke();
+			
+			
+//			设置字体
+			ctx.font = "bold 40px 微软雅黑";
+//			fillText(文字,x,y)
+			ctx.textAlign = "left"
+			ctx.fillText("李四",100,100);
+			ctx.textAlign = "right"
+			ctx.fillText("张三",100,150);
+			ctx.textAlign = "center"
+			ctx.fillText("王五",100,200);
+			
+			ctx.textBaseline = "top";
+			ctx.strokeText("L",50,350);
+			ctx.strokeText("e",100,350);
+			ctx.strokeText("s",150,350);
+			ctx.strokeText("l",200,350);
+			ctx.strokeText("i",250,350);
+			ctx.strokeText("e",300,350);
+			
+//			设置阴影
+//			阴影颜色
+		ctx.shadowColor = "blueviolet";
+//			x,y轴偏移量
+		ctx.shadowOffsetX = 10;
+		ctx.shadowOffsetY = 10; 
+//		虚化度
+		ctx.shadowBlur = 0;
+		ctx.strokeText("Leesin",450,400)
+        </script> -->
+        
+        <!-- 鼠标跟随 -->
+		<canvas id="myCanvas" width="500" height="500" style="background-color: red;"></canvas>
+		
+		<script>
+			var canvas=document.getElementById("myCanvas")
+			var ctx=canvas.getContext("2d")
+			canvas.onmousemove = function(event){
+				ctx.clearRect(0,0,canvas.width,canvas.height)
+				ctx.fillRect(event.offsetX+10,event.offsetY+10,20,20)
+			}
+		</script>
+</body>
+</html>

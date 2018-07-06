@@ -53,3 +53,5 @@ var scratch = document.getElementById("img7");
 scratch.onclick = function(){
     start("scratch",56);
 }
+
+var str = "jfsdlk";

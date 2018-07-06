@@ -9,7 +9,7 @@ const cleanCss = require('gulp-clean-css');
 const open = require('open');
 const imagemin = require('gulp-imagemin');
 
-const day = 'day04x';
+const day = 'day04w';
 
 gulp.task('js',function(){
     return gulp.src(`./app/${day}/js/*.js`)
@@ -52,15 +52,15 @@ gulp.task('server',['default'],function(){
 });
 
 gulp.task('img1',function(){
-    return gulp.src(`./app/${day}/img/Animations/**/*.{jpg,png,gif}`)
+    return gulp.src(`./app/${day}/img/*.{jpg,png,gif}`)
     .pipe(imagemin())
-    .pipe(gulp.dest(`./server/${day}/img/Animations`));
+    .pipe(gulp.dest(`./server/${day}/img`));
 });
 
 gulp.task('img2',function(){
-    return gulp.src(`./app/${day}/img/Buttons/**/*.{jpg,png,gif}`)
+    return gulp.src(`./app/${day}/img/*.{jpg,png,gif}`)
     .pipe(imagemin())
-    .pipe(gulp.dest(`./server/${day}/img/Buttons`));
+    .pipe(gulp.dest(`./server/${day}/img`));
 });
 
 
