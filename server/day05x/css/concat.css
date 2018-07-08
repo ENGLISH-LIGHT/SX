@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #bbffaa;    */
+}
+
+.page{
+    position: relative;
+}
+.page1{
+    background-color: lightblue;
+}
+/* .page4{
+    background-color: red;
+} */
+img{
+    position: absolute;
+}
+/* page1 */
+/* 楼房 */
+.page1-building{
+    display: none;
+    bottom:0;
+    width: 100%;
+    height: 30%;
+}
+/* 小人 */
+.page1-avatar{
+    bottom:  30%;
+    width: 0%;
+    left: 15%;
+    animation: avatar 2s infinite linear;
+}
+@keyframes avatar{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+/* 标题 */
+.page1-title{
+    top:  10%;
+    width: 70%;
+    left: 15%;
+}
+/* 小花1 */
+.page1-flower1{
+    top:  10%;
+    height: 15%;
+    left: 10%;
+    animation: flowerRotate 2s infinite linear;
+}
+/* 小花2 */
+.page1-flower2{
+    height: 18%;
+    right: 18%;
+    top: 22%;
+    animation: flowerRotate 2s infinite linear;
+}
+@keyframes flowerRotate{
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* 云彩飞碟 */
+.page1-cloudys,.page1-elements{
+    width:100%;
+    height: 100%;
+    animation: cloudFlys 2s infinite linear;
+}
+@keyframes cloudFlys{
+    from{
+        transform: scale(1.2)
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/* 页面2 */
+/* 背景 */
+.page2-bg{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* 文本框一 */
+.page2-farm{
+    display: none;
+    right: 0;
+    top: 30%;
+    width: 70%;
+    /* animation: text1 ; */
+}
+/* 文本框二 */
+.page2-IT{
+    display: none;
+    right: 0;
+    top: 60%;
+    width: 70%;
+}
+/* 页面三 */
+.page3-bg{
+    width: 100%;
+    height: 100%;
+}
+.page3-station{
+    bottom: 0;
+    width: 100%;
+}
+.page3-bus{
+    left: 0;
+    width: 65%;
+    bottom: 10%;
+}
+.page3-avatar{
+    right: 0;
+    bottom: 13%;
+    height: 15%;
+}
+
+.page3-title{
+    display:none;
+    left: 0;
+    top: 10%;
+    height: 5%;
+}
+.page3-last{
+    display:none;
+    left: 0;
+    top: 18%;
+    height: 5%;
+}
+
+/* 场景2 */
+.page3-wall{
+    display: none;
+    right: 0;
+    bottom: 0;
+    height: 70%;
+}
+
+.page3-teamavatar{
+    display: none;
+    right: 19%;
+    bottom: 66%;
+    height: 15%;
+}
+
+.page3-space{
+    width: 0%;
+    bottom: 30%;
+    left: 10%;
+}
+.page3-where{
+    width: 0%;
+    bottom: 10%;
+    left: 15%;
+}
+/* 页面4 */
+.page4-bg{
+    width: 100%;
+    height: 100%;
+}
+.page4-title{
+    right: 0;
+    top: 15%;
+    height: 5%;
+}
+.page4-off{
+    height: 70%;
+    left: 5%;
+    bottom: 0;
+}
+
+.page4-guide{
+    width: 50%;
+    left: 25%;
+    top:40%;
+    animation: cloudFlys 2s infinite linear;
+} 
+.page4_on_bg {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.page4_know_you {
+    width: 70%;
+    left: 15%;
+    top: 20%;
+    display: none;
+}
+
+.arrow_up {
+    position: fixed;
+    width: 30%;
+    height: 10%;
+    left: 35%;
+    bottom: 3%;
+    animation: arrow_floating 2s infinite;
+}
+
+@keyframes arrow_floating {
+    0% {
+    }
+    50% {
+        bottom: 5%;
+    }
+    100% {
+        bottom: 3%;
+    }
+}
+
+
+/* 第5页 */
+
+.page5-bg{
+    width: 100%;
+    height: 100%;
+}
+
+.page5-fly{
+    display: none;
+    width: 50%;
+    left: 20%;
+    top:30%;
+}
+.page5-star{
+    width: 100%;
+    height: 100%;
+    animation: spread 2s infinite linear;
+}
+@keyframes spread{
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.page5-light{
+    /* display: none; */
+    width: 0%;
+    top:50%;
+    left: 35%;
+}
+
+/* 第6页 */
+.page6-bg{
+    width: 100%;
+    height: 100%;
+}
+
+.page6-ta{
+    width: 70%;
+    top:25%;
+    left: 5%;
+    transform-origin: 0% 0%;
+    animation: down 5s infinite linear;
+}
+@keyframes down{
+    50%{
+        transform: rotate(90deg);
+    }   
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.page6-txt{
+    width: 50%;
+    top:10%;
+    right: 5%;
+    
+}
+.page6-avatar{
+    width: 30%;
+    top:20%;
+    right: 55%;
+    opacity: 0.5;
+}
+
+#musicOn{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 15%;
+    animation: rotation 1s infinite linear;
+}
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);  
+    }
+}

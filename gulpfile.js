@@ -9,10 +9,10 @@ const cleanCss = require('gulp-clean-css');
 const open = require('open');
 const imagemin = require('gulp-imagemin');
 
-const day = 'day05z';
+const day = 'day05x';
 
 gulp.task('js',function(){
-    return gulp.src(`./app/${day}/js/*.js`)
+    return gulp.src(`./app/${day}/js/main.js`)
     .pipe(concat('concat.js'))
     .pipe(gulp.dest(`./server/${day}/js`))
     .pipe(uglify())
@@ -64,4 +64,4 @@ gulp.task('img2',function(){
 });
 
 
-gulp.task('default',['js','css','html','img1','img2']);
+gulp.task('default',['js','css','html']);
