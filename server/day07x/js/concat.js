@@ -21,10 +21,10 @@ function scrollPlay() {
                 "left": "0px"
             });
         $("li")
-        .eq(index)
-        .addClass("styleFill")
-        .siblings()
-        .removeClass("styleFill");
+            .eq(index)
+            .addClass("styleFill")
+            .siblings()
+            .removeClass("styleFill");
 
     } else if (index > nextIndex) {
         $(".imgbox img")
@@ -44,10 +44,10 @@ function scrollPlay() {
                 "left": "0px"
             });
         $("li")
-        .eq(index)
-        .addClass("styleFill")
-        .siblings()
-        .removeClass("styleFill");
+            .eq(index)
+            .addClass("styleFill")
+            .siblings()
+            .removeClass("styleFill");
     }
 }
 // 自动滑动
@@ -65,3 +65,23 @@ function autoPlay() {
 autoPlay();
 
 // $("li").toggleClass(".styleFill")
+
+$("li").mouseover(function () {
+    clearInterval(timer);
+    index = $(this).index();
+    scrollPlay();
+    index = nextIndex;
+}).mouseout(function () {
+    autoPlay();
+});
+
+$(".btnleft").click(function (param) {
+    clearInterval(timer);
+    nextIndex++;
+    if(nextIndex>7){
+        nextIndex = 0;
+    }
+    scrollPlay();
+    index = nextIndex;
+    autoPlay();
+  })
