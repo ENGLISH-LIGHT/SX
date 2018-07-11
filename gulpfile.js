@@ -9,7 +9,7 @@ const cleanCss = require('gulp-clean-css');
 const open = require('open');
 const imagemin = require('gulp-imagemin');
 
-const day = 'day08z';
+const day = 'day09z';
 
 gulp.task('js',function(){
     return gulp.src(`./app/${day}/js/main.js`)
